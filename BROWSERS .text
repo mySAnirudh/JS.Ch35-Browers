@@ -1,0 +1,67 @@
+It is important to understand the differences between different browsers in order 
+to handle each in the way it is expected. So it is important to know which 
+browser your web page is running in.
+To get information about the browser your webpage is currently running in, use 
+the built-in navigator object.
+Navigator Properties
+There are several Navigator related properties that you can use in your Web 
+page. The following is a list of the names and descriptions of each.
+S.No Property and Description
+1
+appCodeName
+This property is a string that contains the code name of the 
+browser, Netscape for Netscape and Microsoft Internet Explorer for 
+Internet Explorer.
+2
+appVersion
+This property is a string that contains the version of the browser as 
+well as other useful information such as its language and 
+compatibility.
+3
+language
+This property contains the two-letter abbreviation for the language 
+that is used by the browser. Netscape only.
+4
+mimTypes[]
+This property is an array that contains all MIME types supported by 
+the client. Netscape only.
+5
+platform[]
+This property is a string that contains the platform for which the 
+browser was compiled."Win32" for 32-bit Windows operating 
+systems
+
+
+6
+plugins[]
+This property is an array containing all the plug-ins that have been 
+installed on the client. Netscape only.
+7
+userAgent[]
+This property is a string that contains the code name and version of 
+the browser. This value is sent to the originating server to identify 
+the client.
+Navigator Methods
+There are several Navigator-specific methods. Here is a list of their names and 
+descriptions.
+S.No Method and Description
+1
+javaEnabled()
+This method determines if JavaScript is enabled in the client. If 
+JavaScript is enabled, this method returns true; otherwise, it 
+returns false.
+2
+plugings.refresh
+This method makes newly installed plug-ins available and 
+populates the plugins array with all new plug-in names. Netscape 
+only.
+3
+preference(name,value)
+This method allows a signed script to get and set some Netscape 
+preferences. If the second parameter is omitted, this method will 
+return the value of the specified preference; otherwise, it sets the 
+value. Netscape only.
+4
+taintEnabled()
+This method returns true if data tainting is enabled; false 
+otherwise.
